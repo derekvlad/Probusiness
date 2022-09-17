@@ -29,7 +29,9 @@ function nunjucks() {
         .pipe(browserSync.stream())
 };
 function styles() {
-    return src('app/scss/style.scss')
+    return src([
+        'app/scss/style.scss',
+    ])
         .pipe(scss({ outputStyle: 'compressed' }))
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
@@ -88,11 +90,14 @@ function webpimage() {
         .pipe(webp())
         .pipe(dest('dist/images/'))
 }
+function fonts(){
+    return src('app/fonts/*.*')
+            .pipe(dest('dist/fonts'))
+}
 function build() {
     return src([
         'app/**/*.html',
         'app/css/style.min.css',
-        'app/fonts/*.*',
         'app/js/main.min.js'
     ], { base: 'app' })
         .pipe(webpHtmlNosvg())
@@ -123,8 +128,9 @@ exports.nunjucks = nunjucks;
 exports.cleanDist = cleanDist;
 exports.webpHtml = webpHtml
 exports.webpcss = webpcss
+exports.fonts = fonts
 exports.webpimage = webpimage
-exports.build = series(cleanDist, images, build, webpimage, webpcss);
+exports.build = series(cleanDist, images, build, webpimage, webpcss , fonts);
 
 
 exports.default = parallel(nunjucks, styles, scripts, browsersync, waching);
