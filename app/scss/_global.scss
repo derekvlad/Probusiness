@@ -1,0 +1,51 @@
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    @extend %montserrat-300;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1190px;
+}
+
+.header-top {
+    padding: 34px 0 325px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+        display: flex;
+
+    }
+    &__item-link {
+        font-size: 17px;
+        line-height: 21px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+            border-bottom: 1px solid #fff;
+        }
+    }
+
+    &__item+.header-top__item {
+        margin-left: 25px;
+    }
+    &__social-link{
+        display: flex;
+    }
+    &__social-item+.header-top__social-item{
+        margin-left: 15px;
+    }
+}
