@@ -92,6 +92,7 @@ function build() {
     return src([
         'app/**/*.html',
         'app/css/style.min.css',
+        'app/fonts/*.*',
         'app/js/main.min.js'
     ], { base: 'app' })
         .pipe(webpHtmlNosvg())
