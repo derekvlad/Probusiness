@@ -8,6 +8,7 @@
     background-image: url(../images/header-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 
 
     &__title {
@@ -91,6 +92,10 @@
 
     &__content {
         max-width: 528px
+    }
+
+    &__img {
+        object-fit: contain;
     }
 }
 
@@ -562,7 +567,7 @@ li.slick-active {
         line-height: 24px;
         letter-spacing: 0.03em;
         color: #30538D;
-        margin-right: 37px; 
+        margin-right: 37px;
     }
 }
 

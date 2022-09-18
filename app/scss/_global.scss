@@ -49,3 +49,13 @@ body {
         margin-left: 15px;
     }
 }
+.menu__btn{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    display: none;
+    
+}
+.menu__btn path{
+    stroke: #fff;
+}

@@ -1,0 +1,219 @@
+@media(max-width:1060px) {
+    .header-top {
+
+        &__menu {
+            background-color: rgba(13, 12, 20, 0.44);
+            ;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            transform: translateY(-400px);
+            transition: all 1s;
+
+        }
+
+        &__list {
+            display: block;
+
+        }
+
+        &__item {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #fff;
+        }
+
+        &__item+.header-top__item {
+            margin-left: 0;
+        }
+    }
+
+    ul.header-top__list {
+        padding-top: 50px;
+    }
+
+    ul.header-top__social-link {
+        margin-right: 50px;
+    }
+
+    .header-top--active .header-top__menu {
+        transform: translateY(0px);
+    }
+
+    .menu__btn {
+        display: block;
+        right: 0;
+        top: 50px;
+        z-index: 3;
+    }
+
+    .skills {
+        background-position: center;
+    }
+}
+
+@media (max-width: 950px) {
+    .description {
+        &__item {
+            flex-direction: column;
+            align-items: center;
+
+            &:nth-child(1) {
+                .description__content {
+                    margin: 0 auto 50px;
+                    max-width: 472px;
+
+                }
+            }
+
+            &:nth-child(2) {
+                flex-direction: column-reverse;
+
+                .description__content {
+                    margin: 0 auto 50px;
+                    max-width: 472px;
+                    flex-direction: column-reverse;
+
+                }
+            }
+
+            &:nth-child(3) {
+                .description__content {
+                    margin: 0 auto 50px;
+                    max-width: 472px;
+
+                }
+            }
+        }
+
+        &__img {
+            object-fit: contain;
+            max-width: 472px;
+            margin: 0 auto;
+        }
+    }
+    .news__item{
+        margin: 0 auto;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .resedents {}
+
+    .slider-resedents {
+        &__item {
+            flex-direction: column;
+        }
+
+        &__name {
+            top: 300px;
+            bottom: 0;
+            left: 200px
+        }
+
+        &__link-btn {
+            height: 50px;
+        }
+
+        &__after {
+            object-fit: contain;
+            padding-top: 20px;
+        }
+
+        &__before {
+            object-fit: contain;
+        }
+
+        ul.slider-resedents__contacts {
+            padding: 30px 0;
+            margin: 0 auto
+        }
+
+        &__contacts {
+            background-position: center 5px;
+        }
+    }
+
+    .requirements {
+        &__inner {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+}
+@media (max-width:680px){
+    .footer__inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__link-mail {
+        font-size: 16px;
+        line-height: 18px;
+        margin-right: 0px;
+        padding-top: 20px;
+    }
+}
+
+@media(max-width: 480px) {
+    body {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .header {
+        &__title {
+            font-size: 26px;
+            line-height: 35px;
+
+        }
+
+        &__btn {
+            font-size: 18px;
+            line-height: 22px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    .description__img {
+
+        max-width: 100%;
+    }
+    .skills__title {
+        font-size: 41px;
+        line-height: 44px;
+    }
+    .resedents__title {
+        font-size: 41px;
+        line-height: 45px;
+    }
+
+    .slider-resedents__job {
+        top: 63px;
+        left: 30px;
+    }
+
+    .slider-resedents ul.slider-resedents__contacts {
+        padding: 40px 0;
+        margin: 0 auto;
+    }
+    .events__title {
+        font-size: 41px;
+        line-height: 45px;
+    }
+    .events__item {
+        padding: 187px 21px 30px 21px;
+    }
+    .slider-resedents__link-btn {
+
+        padding: 13px 32px;
+    }
+}
+@media (max-width: 400px){
+    ul.header-top__social-link{
+        display: none;
+    }
+}
