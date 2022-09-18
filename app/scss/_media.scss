@@ -109,6 +109,7 @@
     .slider-resedents {
         &__item {
             flex-direction: column;
+            
         }
 
         &__name {
@@ -139,7 +140,9 @@
             background-position: center 5px;
         }
     }
-
+    .slider-resedents picture{
+        margin: 0 auto;
+    }
     .requirements {
         &__inner {
             flex-direction: column;
