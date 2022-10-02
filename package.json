@@ -17,6 +17,7 @@
     "jquery": "^3.6.0"
   },
   "devDependencies": {
+    "animate.css": "^4.1.1",
     "del": "^6.1.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-newer": "^1.4.0",
@@ -26,6 +27,7 @@
     "gulp-webp-css": "^1.1.0",
     "gulp-webp-html-nosvg": "^1.1.1",
     "sass": "^1.52.3",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "wow.js": "^1.2.2"
   }
 }

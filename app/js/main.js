@@ -1,3 +1,4 @@
+
 $(function () {
     $('.slider-resedents').slick({
         dots: true,
@@ -48,3 +49,5 @@ $(function () {
         $('.header-top').toggleClass('header-top--active')
     })
 });
+
+new WOW().init();
